@@ -1,8 +1,13 @@
 # go-university-api
-api-go-university 
 
-Intro
+## Intro
+```
 API para la divulgación de contenidos institucionales, académicos y culturales de la universidad de córdoba.
+```
 
-Install
+## Project setup
+```
 npm install
+```
+
+
