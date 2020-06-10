@@ -1,0 +1,37 @@
+{
+  "name": "go_university",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon index.js --ignore 'dbjson/*.json' ",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "generate-vapid": "./node_modules/web-push/src/cli.js generate-vapid-keys --json > vapid.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.20.0",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.6.10",
+    "mongoose-fuzzy-searching": "^1.1.9",
+    "mongoose-partial-full-search": "0.0.4",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
